@@ -1,9 +1,9 @@
 
 <?php
 $servername="localhost";
-$username="root";
-$password="";
-$db="sixteen";
+$username="goldqkyo_gold";
+$password="axp-p99/112358";
+$db="goldqkyo_goldshop";
 
 
 // Create connection
@@ -11,7 +11,7 @@ $con= new PDO("mysql:host=$servername;dbname=$db",$username,$password);
 
 if(isset($_POST['valide'])){
   try{
-    $reqinsert="insert into `orders` values(null,'".$_POST['name']."','".$_POST['email']."','".$_POST['phone']."','".$_POST['country']."','".$_POST['payment']."','".$_POST['prod']."','".$_POST['type']."','".$_POST['price']."',current_timestamp(),0)";
+    $reqinsert="insert into `orders` values(null,'".$_POST['sp_api_user_fullname']."','".$_POST['sp_api_user_email']."','".$_POST['phone']."','".$_POST['country']."','".$_POST['payment']."','".$_POST['prod']."','".$_POST['type']."','".$_POST['price']."',CURRENT_TIMESTAMP(),0)";
     $con->exec($reqinsert);
     header("Location: http://localhost/Sixteen/prod.php?num=".$_POST['ids']);
   }
@@ -25,6 +25,13 @@ $sqlAffich = "SELECT * FROM products  WHERE id='".$num."'";
 $statement = $con->prepare($sqlAffich);
 $statement->execute();
 $Prod = $statement->fetch(PDO::FETCH_OBJ);
+
+
+$my_email ="ayoubaqarrout1@gmail.com" ;
+$return_to ="https://goldpers.com/Sixteen" ;
+$notify_page ="http://yourwebsite.com/notify_page.php" ;
+$custom = "example";
+
 ?>
 
 
@@ -58,58 +65,52 @@ $Prod = $statement->fetch(PDO::FETCH_OBJ);
           <table id="order-table">
             <thead>
               <tr>
-                <th colspan="2">Product</th>
-                <th class="align-right">Subtotal</th>
+                <th >Product</th>
+                <th class="align-right">Total</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td colspan="2" class="gray product">
-                  <?=$Prod->name;?>
-                </td>
-
-                <td class="align-right gray"><?=$Prod->price;?> $</td>
-              </tr>
-
-            </tbody>
+            
             <tfoot>
               <tr>
-                <td colspan="2" class="total">Total</td>
-                <td class="align-right total"><?=$Prod->price;?> $</td>
+                <td ><?=$Prod->name;?></td>
+                <td class="align-right "><?=$Prod->price;?> $</td>
               </tr>
             </tfoot>
           </table>
 
           <h3 class="title">Contact Information</h3>
 
-          <form action="pay.php" method="post">
+          <form action="https://spaceremit.com/apipay/" method="post"  accept-charset="utf-8" >
+
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="<?php echo htmlspecialchars( $my_email); ?>">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="item_name" value="Recharge">
+            <input type="hidden" name="return" value="<?php echo htmlspecialchars( $return_to); ?>">
+            <input type="hidden" name="notify_url" value="<?php echo htmlspecialchars( $notify_page); ?>">
+            <input type="hidden" name="custom" value="<?php echo htmlspecialchars( $custom );?>">
+            <input type="hidden" name="sp_api_skip_register" value="true">
+
             <div class="input-container">
-              <input class="main-inputs" name="email" type="email" id="contact-information" />
-              <label class="animated-label" for="contact-information"
-                >Email Address *</label>
+              <input class="main-inputs" name="sp_api_user_email" type="email" id="contact-information" />
+              <label class="animated-label" for="contact-information" >Email Address *</label>
             </div>
-            <br />
+            <br/>
 
             <input hidden type="text" name="type" value="<?=$Prod->type;?>"/>
             <input hidden type="text" name="prod" value="<?=$Prod->name;?>"/>
             <input hidden type="number" name="price" value="<?=$Prod->price;?>"/>
             <input hidden type="number" name="ids" value="<?=$Prod->id;?>"/>
+            <input hidden type="number" name="amount" id="payPrice" value="<?=$Prod->price;?>" required="required" />
 
-
-            <h3 class="title">Customer Information</h3>
             <div id="customer-information-container">
               <div class="input-container">
-                <input class="main-inputs" type="text" name="name" id="first-name" />
+                <input class="main-inputs" type="text" name="sp_api_user_fullname" id="first-name" />
                 <label class="animated-label" for="first-name">First Name *</label>
               </div>
               <div class="country-select">
                 <span id="arrow"></span>
-                <input
-                  type="text"
-                  id="chosen-country"
-                  class="main-inputs"
-                  name="country"
-                  value=""/>
+                <input type="text" id="chosen-country" class="main-inputs" name="country" value=""/>
                 <label id="country-label" for="country-input">
                   Country / Region *
                 </label>
@@ -123,31 +124,9 @@ $Prod = $statement->fetch(PDO::FETCH_OBJ);
                 <label class="animated-label" for="phone"> Phone </label>
               </div>
             </div>
-            <h2 class="title">Payment</h2>
-            <div id="payment-methods">
-              <div class="card pay-method top">
-                <input type="radio" name="payment" id="card" value="Card" checked />
-                <label for="card">Pay With Debit Or Credit Card</label>
-                <img src="pics/card.png" />
-              </div>
-              <div class="payment-description description-card">
-                Pay securely via debit or credit card through Whish.
-              </div>
-
-              <div class="crypto pay-method">
-                <input type="radio" name="payment" id="crypto" value="Crypto" />
-                <label for="crypto">Pay With BTC /Crypto Currencies</label>
-                <img src="pics/crypto.png" />
-              </div>
-
-              <div class="payment-description description-crypto">
-                Pay with Bitcoin or other cryptocurrencies.
-              </div>
-            </div>
             <button type="submit" name="valide" id="pay-now">
               <span class="material-icons" >lock</span>
               <!-- <input type="submit" name="valide" id="valide" value="PAY NOW <?=$Prod->price;?> $"> -->
-              
               <span>PAY NOW </span> <span><?=$Prod->price;?> $</span>
           </button>
           </form>
@@ -156,3 +135,28 @@ $Prod = $statement->fetch(PDO::FETCH_OBJ);
     </div>
 </body>
 </html>
+
+
+<?php
+if(!empty($_POST["sender_email"]) && !empty($_POST["reciver_email"]) && !empty($_POST["payment_code"]) && !empty($_POST["total_amount"]) && !empty($_POST["date"]) && !empty($_POST["tax"]) && !empty($_POST["status"]) ){
+
+$myarrayy = $_POST ;
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL,"http://spaceremit.com/api/");
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS,http_build_query($myarrayy));
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$server_output = curl_exec($ch);
+curl_close ($ch);
+
+if ($server_output == "VALID_PAYMENT") {
+
+//do some thing ,this is real payment
+echo "OK ";
+
+
+}else {
+echo "payment invalid";
+}
+
+} ?>

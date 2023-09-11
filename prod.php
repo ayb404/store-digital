@@ -8,16 +8,16 @@ $statement->execute();
 $Produit = $statement->fetch(PDO::FETCH_OBJ);
 
 ?>
+
 <?php
 include "header.php";
 ?>
 
-    <!-- *******************************Page Content -->
-    <div class="">
-      <div class="container"><div class="row"></div></div>
+    <!-- *******************************Page Content-->
+    <div class="page-heading header-text">
+    
     </div>
 
-    <!-- ******************************* Page Content -->
     <div class="best-features about-features">
       <div class="container">
       
@@ -37,8 +37,8 @@ include "header.php";
           <div class="col-md-8">
             <div class="left-content ml-2">
               <br><br>
-              <h4><?= $Produit->type ;?><br><br><?= $Produit->name ;?></h4>
-              <br>
+              <h4 class="text-danger"><?= $Produit->type ;?></h4>
+              <h4><?= $Produit->name ;?></h4>
               <h3><?= $Produit->price ;?>$</h3>
               <br>
               <span style="color: red;">
@@ -64,7 +64,6 @@ include "header.php";
         
       </div>
     </div>
-
+    <!-- ******************************* Page Content -->
     
-
 <?php include "footer.php"; ?> 

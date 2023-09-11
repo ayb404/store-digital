@@ -3,10 +3,18 @@
 
 include "db.php";
 
-$sqlAffich = "SELECT * FROM products ";
+$sqlAffich = "SELECT * FROM products where active = 1 ";
 $statement = $con->prepare($sqlAffich);
 $statement->execute();
 $prudact = $statement->fetchAll(PDO::FETCH_OBJ);
+
+
+$sql = "SELECT * FROM products ORDER BY id DESC LIMIT 1 ";
+$statement = $con->prepare($sql);
+$statement->execute();
+$prud = $statement->fetch(PDO::FETCH_OBJ);
+
+
 
 ?>
 
@@ -21,21 +29,15 @@ include "header.php";
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01">
           <div class="text-content">
-            <h4>Best Offer</h4>
+
             <h2 style="">Explore The Best Digital Products You Need</h2>
           </div>
         </div>
         <div class="banner-item-02">
-          <div class="text-content">
-            <h4>Flash Deals</h4>
-            <h2>Get your best products</h2>
-          </div>
+          
         </div>
         <div class="banner-item-03">
-          <div class="text-content">
-            <h4>Last Minute</h4>
-            <h2>Grab last minute deals</h2>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -56,17 +58,18 @@ include "header.php";
               <div class="product-item">
                 <div align="center"> <a href="prod.php?num=<?=$etu->id;?>"><img src="<?= $etu->image; ?>" alt="..." style="max-width: 250px; height:350px;"></a></div>
                 <div class="down-content">
-                  <a href="prod.php?num=<?=$etu->id;?> "><h4><?= $etu->name;?></h4></a>
-                  <h5 align="center"><?= $etu->price; ?>$</h5>
-                  <!-- <p><?= $etu->description; ?></p> -->
-                  <ul class="stars">
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                  </ul>
-                  <span>Reviews (<?= $etu->reviews; ?>)</span>
+                    <h5 class="text-danger"><?= $etu->type; ?></h5><br>
+                    <a href="prod.php?num=<?=$etu->id;?> "><h4><?= $etu->name;?></h4></a>
+                    <h5 align="center"><?= $etu->price; ?>$</h5>
+                    <!-- <p><?= $etu->description; ?></p> -->
+                    <ul class="stars">
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>Reviews (<?= $etu->reviews; ?>)</span>
                 </div>
               </div>
             </div>
@@ -85,11 +88,13 @@ include "header.php";
           </div>
           <div class="col-md-6">
             <div class="left-content">
-              <h4>Name products</h4>
-              <p><a rel="nofollow"  target="_parent">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website.</p>
+              <h5 class="text-danger"><?= $prud->type; ?></h5><br>
+              <a href="prod.php?num=<?=$prud->id;?> "><h4><?= $prud->name;?></h4></a>
+              <h5><?= $prud->price; ?>$</h5><br>
+              <p><a rel="nofollow"  target="_parent"><?= $prud->description ;?>.</p>
               <span style="color: red;">
                 <ul class=" row ml-1">
-                  <li >Reviews(21)</li>
+                  <li >Reviews(<?= $prud->reviews ;?>)</li>
                   <li>&nbsp</li><li>&nbsp</li>
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -99,12 +104,12 @@ include "header.php";
                 </ul>
               </span><br>
 
-              <a href="products.php" class="filled-button">Read More</a>
+              <a href="prod.php?num=<?=$prud->id;?> " class="filled-button">Read More</a>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="right-image">
-              <img src="assets/images/feature-image.jpg" alt="">
+            <div align="center" class="right-image">
+              <a href="prod.php?num=<?=$prud->id;?>"><img src="<?= $prud->image ;?>" alt="" style="max-width: 250px; height:350px; " ></a>
             </div>
           </div>
         </div>

@@ -1,0 +1,70 @@
+[22-Feb-2023 10:39:39 America/New_York] PHP Notice:  Undefined index: id in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 23
+[22-Feb-2023 10:39:39 America/New_York] PHP Notice:  Trying to get property 'name' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 68
+[22-Feb-2023 10:39:39 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 71
+[22-Feb-2023 10:39:39 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 78
+[22-Feb-2023 10:39:39 America/New_York] PHP Notice:  Trying to get property 'type' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 93
+[22-Feb-2023 10:39:39 America/New_York] PHP Notice:  Trying to get property 'name' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 94
+[22-Feb-2023 10:39:39 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 95
+[22-Feb-2023 10:39:39 America/New_York] PHP Notice:  Trying to get property 'id' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 96
+[22-Feb-2023 10:39:39 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 149
+[22-Feb-2023 10:39:39 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 151
+[22-Feb-2023 10:48:46 America/New_York] PHP Notice:  Undefined index: id in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 23
+[22-Feb-2023 10:48:46 America/New_York] PHP Notice:  Trying to get property 'name' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 68
+[22-Feb-2023 10:48:46 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 71
+[22-Feb-2023 10:48:46 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 78
+[22-Feb-2023 10:48:46 America/New_York] PHP Notice:  Trying to get property 'type' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 92
+[22-Feb-2023 10:48:46 America/New_York] PHP Notice:  Trying to get property 'name' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 93
+[22-Feb-2023 10:48:46 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 94
+[22-Feb-2023 10:48:46 America/New_York] PHP Notice:  Trying to get property 'id' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 95
+[22-Feb-2023 10:48:46 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 144
+[22-Feb-2023 10:48:46 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 146
+[22-Feb-2023 11:01:18 America/New_York] PHP Notice:  Undefined index: id in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 23
+[22-Feb-2023 11:01:18 America/New_York] PHP Notice:  Trying to get property 'name' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 68
+[22-Feb-2023 11:01:18 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 71
+[22-Feb-2023 11:01:18 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 78
+[22-Feb-2023 11:01:18 America/New_York] PHP Notice:  Trying to get property 'type' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 92
+[22-Feb-2023 11:01:18 America/New_York] PHP Notice:  Trying to get property 'name' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 93
+[22-Feb-2023 11:01:18 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 94
+[22-Feb-2023 11:01:18 America/New_York] PHP Notice:  Trying to get property 'id' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 95
+[22-Feb-2023 11:01:18 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 144
+[22-Feb-2023 11:01:18 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 146
+[22-Feb-2023 11:25:44 America/New_York] PHP Notice:  Undefined index: id in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 23
+[22-Feb-2023 11:25:44 America/New_York] PHP Notice:  Trying to get property 'name' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 68
+[22-Feb-2023 11:25:44 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 71
+[22-Feb-2023 11:25:44 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 78
+[22-Feb-2023 11:25:44 America/New_York] PHP Notice:  Trying to get property 'type' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 92
+[22-Feb-2023 11:25:44 America/New_York] PHP Notice:  Trying to get property 'name' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 93
+[22-Feb-2023 11:25:44 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 94
+[22-Feb-2023 11:25:44 America/New_York] PHP Notice:  Trying to get property 'id' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 95
+[22-Feb-2023 11:25:44 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 144
+[22-Feb-2023 11:25:44 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 146
+[22-Feb-2023 11:45:41 America/New_York] PHP Notice:  Undefined index: id in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 23
+[22-Feb-2023 11:45:41 America/New_York] PHP Notice:  Trying to get property 'name' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 68
+[22-Feb-2023 11:45:41 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 71
+[22-Feb-2023 11:45:41 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 78
+[22-Feb-2023 11:45:41 America/New_York] PHP Notice:  Trying to get property 'type' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 92
+[22-Feb-2023 11:45:41 America/New_York] PHP Notice:  Trying to get property 'name' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 93
+[22-Feb-2023 11:45:41 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 94
+[22-Feb-2023 11:45:41 America/New_York] PHP Notice:  Trying to get property 'id' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 95
+[22-Feb-2023 11:45:41 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 144
+[22-Feb-2023 11:45:41 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 146
+[22-Feb-2023 12:18:21 America/New_York] PHP Notice:  Undefined index: id in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 23
+[22-Feb-2023 12:18:21 America/New_York] PHP Notice:  Trying to get property 'name' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 68
+[22-Feb-2023 12:18:21 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 71
+[22-Feb-2023 12:18:21 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 78
+[22-Feb-2023 12:18:21 America/New_York] PHP Notice:  Trying to get property 'type' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 92
+[22-Feb-2023 12:18:21 America/New_York] PHP Notice:  Trying to get property 'name' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 93
+[22-Feb-2023 12:18:21 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 94
+[22-Feb-2023 12:18:21 America/New_York] PHP Notice:  Trying to get property 'id' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 95
+[22-Feb-2023 12:18:21 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 144
+[22-Feb-2023 12:18:21 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 146
+[23-Feb-2023 09:04:53 America/New_York] PHP Notice:  Undefined index: id in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 23
+[23-Feb-2023 09:04:53 America/New_York] PHP Notice:  Trying to get property 'name' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 68
+[23-Feb-2023 09:04:53 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 71
+[23-Feb-2023 09:04:53 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 78
+[23-Feb-2023 09:04:53 America/New_York] PHP Notice:  Trying to get property 'type' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 92
+[23-Feb-2023 09:04:53 America/New_York] PHP Notice:  Trying to get property 'name' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 93
+[23-Feb-2023 09:04:53 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 94
+[23-Feb-2023 09:04:53 America/New_York] PHP Notice:  Trying to get property 'id' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 95
+[23-Feb-2023 09:04:53 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 144
+[23-Feb-2023 09:04:53 America/New_York] PHP Notice:  Trying to get property 'price' of non-object in /home/goldqkyo/public_html/Sixteen/payment/pay.php on line 146

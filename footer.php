@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
-              <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
+              <p>Copyright &copy; 2020 Gold Pers Co., Ltd.
             
             </div>
           </div>
